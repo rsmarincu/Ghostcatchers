@@ -10,9 +10,9 @@ public class SceneTransition : MonoBehaviour
     public string sceneToLoad;
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && other.isTrigger)
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
-            SceneManager.LoadScene(sceneToLoad);
+            SceneManager.LoadSceneAsync(sceneToLoad);
         }
 
     }

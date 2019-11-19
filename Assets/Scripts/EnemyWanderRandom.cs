@@ -20,6 +20,7 @@ public class EnemyWanderRandom : MonoBehaviour
     public FiledOfView fv;
     private GameObject fov;
 
+
     void Start()
     {
         fov = new GameObject("FOV");
