@@ -16,13 +16,15 @@ public class FiledOfView : MonoBehaviour
     private LayerMask mask;
 
     public GameObject parent;
+
+    public Ghost ghost;
     private void Start()
     {
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
+        fov = ghost.angle;
+        viewDistance = ghost.range;
 
-        fov = 60f;
-        viewDistance = 5f;
         setVisionOrigin(parent.transform.position.x, parent.transform.position.y);
 
         mask = LayerMask.GetMask("Collisions", "Player");

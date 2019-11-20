@@ -24,7 +24,10 @@ public class EnemyWanderRandom : MonoBehaviour
     void Start()
     {
         fov = new GameObject("FOV");
+
         fov.AddComponent<FiledOfView>();
+
+        
         fov.AddComponent<MeshRenderer>();
         MeshRenderer fovMeshRenderer = fov.GetComponent<MeshRenderer>();
         fov.AddComponent<MeshFilter>();
@@ -33,6 +36,8 @@ public class EnemyWanderRandom : MonoBehaviour
         fovMeshRenderer.material = fovMaterial;
         fv = fov.GetComponent<FiledOfView>();
         fv.parent = gameObject;
+
+        fv.ghost = GetComponentInChildren<CollectEnemy>().ghost;
         
         animator = gameObject.GetComponent<Animator>();
         body = gameObject.GetComponent<Rigidbody2D>();
