@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5a31157a5c9ff48ac7e0d50d577448, type: 3}
+  m_Name: Spectre
+  m_EditorClassIdentifier: 
+  ghostName: Spectre
+  icon: {fileID: 21300072, guid: a906dfeed80783a4390e1f59855aa924, type: 3}
+  good: 1
+  angle: 26
+  range: 5
+  story_1: All my life, I have been studying medicine and performing experiments.
+  story_2: "I was able to cure lots of sickness and diseases, but I wasn\u2019t able
+    to help my wife."
+  story_3: My last cure attempt ended up in me killing myself. I am so ashamed of
+    myself.
+  jsonFile: {fileID: 4900000, guid: ad14bc90cdfd61746ab052d4b5807a7c, type: 3}

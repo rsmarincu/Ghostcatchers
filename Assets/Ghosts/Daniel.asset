@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5a31157a5c9ff48ac7e0d50d577448, type: 3}
+  m_Name: Daniel
+  m_EditorClassIdentifier: 
+  ghostName: Daniel
+  icon: {fileID: 21300054, guid: a906dfeed80783a4390e1f59855aa924, type: 3}
+  good: 1
+  angle: 39
+  range: 7
+  story_1: "I can\u2019t believe that I killed a man."
+  story_2: I knew that he was going to jump.
+  story_3: I tried to help him, but instead of saving him, I ended up falling off
+    the ledge with him.
+  jsonFile: {fileID: 4900000, guid: 289ffdb1b50d5f246b7667c3b25fbe00, type: 3}

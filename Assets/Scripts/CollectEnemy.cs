@@ -14,7 +14,6 @@ public class CollectEnemy : MonoBehaviour
     {
         parent = gameObject.transform.parent.gameObject;
         enemyWanderRandom = parent.GetComponent<EnemyWanderRandom>();
-        
 
     }
     private void OnTriggerStay2D(Collider2D collision)
@@ -32,6 +31,10 @@ public class CollectEnemy : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void setGhost(Ghost ghost){
+        this.ghost = ghost;
     }
 
 }

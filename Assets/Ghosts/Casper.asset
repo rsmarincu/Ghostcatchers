@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ghostName: Casper
   icon: {fileID: 21300000, guid: a906dfeed80783a4390e1f59855aa924, type: 3}
-  bood: 1
+  good: 1
   angle: 40
   range: 10
+  story_1: "I can\u2019t believe that my wife\u2019s boyfriend shot me, what an embarrassing
+    way to go."
+  story_2: If only I had pulled it from the beginning, I would still be alive.
+  story_3: But I was so slow to present to her that engagement ring.
+  jsonFile: {fileID: 4900000, guid: bb4e1d3d38423934485742a2282a1443, type: 3}

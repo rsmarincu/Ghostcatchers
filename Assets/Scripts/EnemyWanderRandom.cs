@@ -7,7 +7,7 @@ public class EnemyWanderRandom : MonoBehaviour
     // Start is called before the first frame update
 
     public float speed;
-    public Transform[] fixedSpots;
+    public List<GameObject> fixedSpots;
     private int randomSpot;
     private float waitTime = 1f;
     private float currentWaitTime ;
@@ -36,7 +36,7 @@ public class EnemyWanderRandom : MonoBehaviour
         
         animator = gameObject.GetComponent<Animator>();
         body = gameObject.GetComponent<Rigidbody2D>();
-        randomSpot = Random.Range(0, fixedSpots.Length);
+        randomSpot = Random.Range(0, fixedSpots.Count);
         currentWaitTime = waitTime;
         aim = Vector3.zero;
 
@@ -70,7 +70,7 @@ public class EnemyWanderRandom : MonoBehaviour
 
             if (currentWaitTime <= 0)
             {
-                randomSpot = Random.Range(0, fixedSpots.Length);
+                randomSpot = Random.Range(0, fixedSpots.Count);
                 currentWaitTime = waitTime;
             }
             else
@@ -86,5 +86,9 @@ public class EnemyWanderRandom : MonoBehaviour
         aim = destination - transform.position;
 
         fv.setAim(aim);
+    }
+
+    public void setSpots(List<GameObject> spots){
+        this.fixedSpots = spots;
     }
 }

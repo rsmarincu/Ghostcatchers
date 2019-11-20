@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5a31157a5c9ff48ac7e0d50d577448, type: 3}
+  m_Name: GeistPolter
+  m_EditorClassIdentifier: 
+  ghostName: Geist Polter
+  icon: {fileID: 21300052, guid: a906dfeed80783a4390e1f59855aa924, type: 3}
+  good: 0
+  angle: 50
+  range: 6
+  story_1: "I have always been interested in studying the afterlife. That\u2019s why
+    I was always digging graveyards."
+  story_2: How unlucky I was that a brick fell on my head while I was digging.
+  story_3: I wanted to see the face of the woman that I slaughtered last month.
+  jsonFile: {fileID: 4900000, guid: 0bfa0aa5cb347f141a0fe7f29e24ffdb, type: 3}

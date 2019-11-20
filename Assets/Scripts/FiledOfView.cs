@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FiledOfView : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class FiledOfView : MonoBehaviour
         viewDistance = 5f;
         setVisionOrigin(parent.transform.position.x, parent.transform.position.y);
 
-        mask = LayerMask.GetMask("Collisions");
+        mask = LayerMask.GetMask("Collisions", "Player");
     }
 
     private void LateUpdate()
@@ -54,7 +55,12 @@ public class FiledOfView : MonoBehaviour
             }
             else
             {
+                if (raycastHit.transform.gameObject.tag == "Player")
+                {
+                    SceneManager.LoadScene("Death");
+                }
                 vertex = raycastHit.point;
+
             }
 
             vertices[vertexIndex] = vertex;

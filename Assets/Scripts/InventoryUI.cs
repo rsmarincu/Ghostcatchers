@@ -13,7 +13,6 @@ public class InventoryUI : MonoBehaviour
     void Start()
     {
         inventory = GhostInventory.instance;
-        inventory.OnEventCallback += UpdateUI;
 
         slots = parent.GetComponentsInChildren<InventorySlot>();
 
@@ -34,10 +33,5 @@ public class InventoryUI : MonoBehaviour
                 slots[i].RemoveGhost();
             }
         }
-    }
-
-    void UpdateUI()
-    {
-        Debug.Log("UPDATING UI ");
     }
 }
