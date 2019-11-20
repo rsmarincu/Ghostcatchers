@@ -16,7 +16,6 @@ public class InventoryUI : MonoBehaviour
 
         slots = parent.GetComponentsInChildren<InventorySlot>();
 
-        DontDestroyOnLoad(this.gameObject);
     }
 
     
