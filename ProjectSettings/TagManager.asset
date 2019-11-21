@@ -33,8 +33,8 @@ TagManager:
   - PostProcessing
   - Boxes
   - Spot
-  - 
-  - 
+  - Spawner
+  - GhostSpawner
   - 
   - 
   - 
@@ -48,6 +48,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Floor
+    uniqueID: 1822502075
+    locked: 0
+  - name: Spawner
+    uniqueID: 2362822833
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

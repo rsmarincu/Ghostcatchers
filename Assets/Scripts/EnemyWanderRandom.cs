@@ -53,7 +53,7 @@ public class EnemyWanderRandom : MonoBehaviour
         animator.SetFloat("Speed", aim.sqrMagnitude);
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         transform.position = Vector2.MoveTowards(transform.position, destination, speed * Time.deltaTime);
 

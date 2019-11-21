@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c531cef15e59840a720ce966204b40, type: 3}
+  m_Name: Colliders
+  m_EditorClassIdentifier: 
+  prefabList:
+  - {fileID: 2635811869806494031, guid: b1766b71eee3a934ebc2558da8cbe9f4, type: 3}
+  - {fileID: 2680629213668013788, guid: 4e8d3c9972a6ea047a8d36ece369910c, type: 3}
+  - {fileID: 2772479696620079232, guid: 1e1b158cdaa489b4e9f7a4e329300987, type: 3}
+  - {fileID: 1807170474390221424, guid: ceb46e3ef75d21a45af62215c4439017, type: 3}
+  - {fileID: 930569168387418844, guid: c89d2461edfbcda41aa351b6c15e6068, type: 3}

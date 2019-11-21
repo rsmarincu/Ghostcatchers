@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
-[CreateAssetMenu(fileName ="New Ghost", menuName ="Ghosts/New Ghost")]
+[CreateAssetMenu(fileName ="New Ghost", menuName ="Scriptable Objects/New Ghost")]
 public class Ghost : ScriptableObject
 {
     [HideInInspector]

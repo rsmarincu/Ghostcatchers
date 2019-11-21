@@ -9,12 +9,11 @@ public class SpawnDestinations : MonoBehaviour
     
     [HideInInspector]
     public List<Vector3> destinationSpots = new List<Vector3>();
-
+    [HideInInspector] 
     public List<Vector3> colliderSpots = new List<Vector3>();
-
     public GameObject spot;
 
-    void Start()
+    void Awake()
     {   
         colliderSpots = gameObject.GetComponent<SpawnColliders>().colliderSpots;
 
@@ -41,7 +40,7 @@ public class SpawnDestinations : MonoBehaviour
             randomSpot.x = Random.Range(0, (int) size.x) + 0.5f;
             randomSpot.y = Random.Range(0, (int) size.y) + 0.5f;
 
-            while (destinationSpots.Contains(randomSpot) & colliderSpots.Contains(randomSpot)){
+            while (destinationSpots.Contains(randomSpot) ^ colliderSpots.Contains(randomSpot)){
 
                 randomSpot.x = Random.Range(0, size.x);
                 randomSpot.y = Random.Range(0, size.y);

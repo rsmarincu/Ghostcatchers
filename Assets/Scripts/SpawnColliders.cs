@@ -4,15 +4,20 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 public class SpawnColliders : MonoBehaviour
 {
+    [HideInInspector] 
     public List<GameObject> prefabList;
+
+    public Graves prefabs;
+
     private Tilemap tilemap;
     private int numberOfColliders;
 
     [HideInInspector]
     public List<Vector3> colliderSpots = new List<Vector3>();
 
-    void Start()
-    {
+    void Awake()
+    {   
+        prefabList = prefabs.prefabList;
 
         numberOfColliders = Random.Range(5,10);
 

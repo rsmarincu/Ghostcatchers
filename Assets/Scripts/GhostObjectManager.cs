@@ -29,17 +29,19 @@ public class GhostObjectManager : MonoBehaviour
 
         for (int i=0; i<length; i++){
             r = Random.Range(0,length);
+            while (randomIndexes.Contains(r)){
+                r = Random.Range(0,length);
+            }
             randomIndexes.Add(r);
         }
 
-        Debug.Log(ghostList[0].ghostName);
-        Debug.Log(ghostList[1].ghostName);
     }
 
 
     public Ghost getGhost(int index){
        
         int randomIndex = randomIndexes[index];
+
 
         if(OnEventCallback != null)
         {

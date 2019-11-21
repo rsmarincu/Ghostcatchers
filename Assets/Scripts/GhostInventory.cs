@@ -53,5 +53,9 @@ public class GhostInventory : MonoBehaviour
         }
     }
 
+    public Ghost getCurrentGhost(){
+        return ghostList[ghostList.Count - 1];
+    }
+
 
 }

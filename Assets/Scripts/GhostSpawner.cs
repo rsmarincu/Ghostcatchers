@@ -8,7 +8,6 @@ public class GhostSpawner : MonoBehaviour
     private Ghost ghost;
     public int index;
     public List<Vector3> spots;
-
     public SpawnDestinations destinations;
     void Start()
     {
