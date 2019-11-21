@@ -31,13 +31,34 @@ public class Ghost : ScriptableObject
 
     public TextAsset jsonFile;
 
+    public int index;
+
+    public bool visible;
+
+    public bool waiting;
+
     public void Load()
     {
         JsonUtility.FromJsonOverwrite(this.jsonFile.ToString(), this);
     }
 
-    public void test(){
+    public string GetStory(){
 
-        Debug.Log(ghostName + story_1);
+
+
+
+        List<string> stories = new List<string>();
+        stories.Add(story_1);
+        stories.Add(story_2);
+        stories.Add(story_3);
+        stories.Add("");
+
+        if(waiting){
+            return stories[index % 3];
+        }
+        else{
+            return stories[3];
+        }
+        
     }
 }

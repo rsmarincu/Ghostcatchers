@@ -20,6 +20,14 @@ public class EnemyWanderRandom : MonoBehaviour
     public FiledOfView fv;
     private GameObject fov;
 
+    public bool visible;
+
+    public bool change;
+     
+    public int currentIndex = 0;
+
+    public bool waiting;
+
 
     void Start()
     {
@@ -43,19 +51,32 @@ public class EnemyWanderRandom : MonoBehaviour
         body = gameObject.GetComponent<Rigidbody2D>();
         randomSpot = Random.Range(0, fixedSpots.Count);
         currentWaitTime = waitTime;
-        aim = Vector3.zero;
-
-        
+        aim = Vector3.zero;  
     }
 
     private void Update()
     {
         animator.SetFloat("Speed", aim.sqrMagnitude);
+
+        visible = gameObject.GetComponent<Renderer>().isVisible;
+
+        fv.ghost.visible = visible;
+
+        fv.ghost.index = currentIndex;
+
+ 
+        if (visible){
+
+            DialogueManager.instance.setGhost(fv.ghost);
+
+        }
+
     }
 
     private void LateUpdate()
     {
         transform.position = Vector2.MoveTowards(transform.position, destination, speed * Time.deltaTime);
+
 
         if (aim.x < 0)
         {
@@ -72,17 +93,29 @@ public class EnemyWanderRandom : MonoBehaviour
 
         if (Vector3.Distance(transform.position, destination) < 0.05f)
         {
-
+            waiting = true;
+            fv.ghost.waiting = waiting;
             if (currentWaitTime <= 0)
             {
                 randomSpot = Random.Range(0, fixedSpots.Count);
                 currentWaitTime = waitTime;
+                change = true;
             }
             else
             {
+                
+                if (change){
+                    currentIndex += 1;
+                    change = false;
+                }
                 currentWaitTime -= Time.deltaTime;
             }
         }
+        else{
+            waiting = false;
+            fv.ghost.waiting = waiting;
+        }
+        
         
 
         destination.x = fixedSpots[randomSpot].x;
