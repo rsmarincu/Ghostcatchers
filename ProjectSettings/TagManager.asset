@@ -7,6 +7,13 @@ TagManager:
   - Tag
   - Hide
   - Ghost
+  - GoodBox
+  - BadBox
+  - Spawner_1
+  - Spawner_2
+  - Spawner_3
+  - Spawner_4
+  - Spawner_5
   layers:
   - Default
   - TransparentFX
@@ -24,8 +31,8 @@ TagManager:
   - Ghost
   - RandomSpots
   - PostProcessing
-  - 
-  - 
+  - Boxes
+  - Spot
   - 
   - 
   - 

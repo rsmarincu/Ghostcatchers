@@ -7,7 +7,7 @@ public class EnemyWanderRandom : MonoBehaviour
     // Start is called before the first frame update
 
     public float speed;
-    public List<GameObject> fixedSpots;
+    public List<Vector3> fixedSpots;
     private int randomSpot;
     private float waitTime = 1f;
     private float currentWaitTime ;
@@ -85,15 +85,15 @@ public class EnemyWanderRandom : MonoBehaviour
         }
         
 
-        destination.x = fixedSpots[randomSpot].transform.position.x;
-        destination.y = fixedSpots[randomSpot].transform.position.y;
+        destination.x = fixedSpots[randomSpot].x;
+        destination.y = fixedSpots[randomSpot].y;
 
         aim = destination - transform.position;
 
         fv.setAim(aim);
     }
 
-    public void setSpots(List<GameObject> spots){
+    public void setSpots(List<Vector3> spots){
         this.fixedSpots = spots;
     }
 }
