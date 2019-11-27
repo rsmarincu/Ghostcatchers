@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5a31157a5c9ff48ac7e0d50d577448, type: 3}
+  m_Name: WanTo
+  m_EditorClassIdentifier: 
+  ghostName: WanTo
+  icon: {fileID: 21300142, guid: a906dfeed80783a4390e1f59855aa924, type: 3}
+  good: 0
+  angle: 52
+  range: 13
+  story_1: My idea was amazing. I had the perfect plan.
+  story_2: Our pockets were full of money. We did not hurt anyone during the bank
+    heist.
+  story_3: "I didn\u2019t expect that my friends would shoot me in the back in order
+    to get my share in the heist."
+  jsonFile: {fileID: 4900000, guid: 02a30abbe5fd9564e890b4854c8d0e26, type: 3}
+  index: 0
+  visible: 0
+  waiting: 0

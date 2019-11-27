@@ -9,7 +9,7 @@ public class Box : MonoBehaviour
 
     public void TestGhost(Ghost ghost){
 
-        if (ghost != good){
+        if (ghost.good != good){
             SceneManager.LoadScene("Death");
         }
         else{

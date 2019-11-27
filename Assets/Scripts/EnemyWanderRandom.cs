@@ -9,7 +9,7 @@ public class EnemyWanderRandom : MonoBehaviour
     public float speed;
     public List<Vector3> fixedSpots;
     private int randomSpot;
-    private float waitTime = 1f;
+    private float waitTime = 3f;
     private float currentWaitTime ;
     private Vector2 aim;
     private Vector3 destination;

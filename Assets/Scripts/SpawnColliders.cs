@@ -19,7 +19,7 @@ public class SpawnColliders : MonoBehaviour
     {   
         prefabList = prefabs.prefabList;
 
-        numberOfColliders = Random.Range(5,10);
+        numberOfColliders = Random.Range(5,20);
 
         tilemap = gameObject.GetComponent<Tilemap>();
 
