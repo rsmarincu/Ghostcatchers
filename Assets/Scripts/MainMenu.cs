@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void MainMenuButton()
     {
+
         SceneManager.LoadScene("MainMenu");
     }
 }
