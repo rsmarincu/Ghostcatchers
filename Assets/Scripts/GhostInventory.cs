@@ -14,6 +14,8 @@ public class GhostInventory : MonoBehaviour
     public delegate void OnEvent();
 
     public OnEvent OnEventCallback;
+
+    private bool hadGhosts = false;
     private void Awake()
     {
         if (instance != null)
@@ -31,7 +33,8 @@ public class GhostInventory : MonoBehaviour
         {
             return false;
         }
-        
+
+        hadGhosts = true;
         ghostList.Add(ghost);
 
         if(OnEventCallback != null)
@@ -56,6 +59,9 @@ public class GhostInventory : MonoBehaviour
     public Ghost getCurrentGhost(){
         return ghostList[ghostList.Count - 1];
     }
-
+    public bool getHadGhosts()
+    {
+        return hadGhosts;
+    }
 
 }
